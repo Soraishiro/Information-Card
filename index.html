@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <
+    <title>Lê Phương Uyên</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      
+        body {
+            background: url('https://i.imgur.com/EXelmvX.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            height: 100vh;
+            width: 100vw;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+
+        #logo {
+            width: 150px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            align-items: center;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+
+        .flip-card-back {
+            background-color: #2980b9;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .left-column {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            padding-right: 30px;
+        }
+
+        .right-column {
+            margin: top 20px;;
+            width: auto;
+            margin-left: 30px;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            width: auto;
+            height: auto;
+            padding: 50px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        
+        h1 {
+            margin-bottom: 10px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        h2 {
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+        }    
+
+        .section {
+            align-items: center;
+        }
+
+
+        main {
+            height: 100%;
+            width: 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contacts {
+            border: 2px dashed rgb(189, 195, 199);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 15px;
+            margin-left: 30px;
+        }
+
+        .contacts a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <main class="mt-40">
+        <div class="card">
+            <!-- Left Column -->
+            <div class="left-column">
+                <!-- Content for left column goes here --> 
+                <img id="logo" src="https://lh3.googleusercontent.com/pw/ADCreHdaOMYiUdjIlNAkd_b5__H927yPc0fySkMRdRf1qaRgU26I1UW89DW_9LsfRbU7yvUEOfkbvk1sYWqNZIgNFAf40q51O1fZeMm91sAFycV-reJJcLw=w2400" />
+                <div class="flip-card">
+                    <div class="flip-card-inner">  
+                      <div class="flip-card-front">
+                        <img src="https://i.imgur.com/zJ2qYVL.jpg" alt="Avatar" style="width:300px;height:400px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <img src="https://i.imgur.com/u019VqU.jpg" alt="Back" style="width:300px;height:400px;">
+                      </div>
+                    </div>
+                </div>
+            </div> <!-- Right Column -->
+            <div class="right-column">
+                <!-- Content for right column goes here -->
+                <div class="section">
+                    <h1 style="color: rgb(200, 228, 178)"> Lê Phương Uyên</h1>
+                    <h2 style="color: rgb(255, 217, 183)"> 🐏 Aries 🐏 </h2>
+                    <h2 style="color: rgb(255, 217, 183)"> A member of ATTT2023.2</h2> 
+                    <h2 style="color: rgb(255, 217, 183)"> University of Information Technology</h2>                
+                    <h1 style="color: rgb(158, 210, 190)">- - - Things I'm interested at - - -</h1>
+                    <h2 style="color: rgb(255, 217, 183)">~ Enjoying good food 🍽🍽🍽 ~</h2>
+                    <h2 style="color: rgb(255, 217, 183)">~ Listening to music 🎵🎵🎵 ~</h2>
+                </div>
+                <div class="section">
+                    <h1 style="color: rgb(158, 210, 190)"> - - - My ideal - - -</My></h1>
+                    <h2 style="color: rgb(255, 217, 183) ">"To become a better me than yesterday :>"</h2>
+                </div>
+                <div class="contacts">
+                    <h1 style="color: rgb(158, 210, 190)"> Say "Hi!" to me via </h1>
+                    <a href="https://mail.google.com/mail/u/2/#search/23521761%40gm.uit.edu.vn"><h2 style="color:rgb(255, 217, 183)" >Mail: 23521761@gm.uit.edu.vn</h2></a>
+                    <a href="https://www.facebook.com/profile.php?id=100009210892205"><h2 style="color:rgb(255, 217, 183)" >Facebook: Phương Uyên </h2></a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
